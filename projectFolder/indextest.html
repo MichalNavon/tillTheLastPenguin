@@ -1,0 +1,71 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>עד הפינגווין האחרון</title>
+    <meta name="description" content="name of game" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Michal Navon & Lital Lavi" />
+
+    <!--Icon-->
+    <link rel="icon" href="pics/penguinLogo.png" type="image/png">
+
+    <!-- CSS -->
+
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <!--jQuery library-->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <!--הקוד שמפעיל את תפריט הניווט-->
+    <script src="jScripts/myScript.js"></script>
+
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <!--קישור לדף עצמו כדי להתחיל את המשחק מחדש בלחיצה על הלוגו-->
+            <a href="indextest.html">
+                <img id="logo" src="pics/penguinLogo.png"/> <!--הלוגו של המשחק שלכם-->
+                <p><b>עד הפינגווין האחרון</b></p>
+            </a>
+            <!--תפריט הניווט בראש העמוד-->
+            <nav>
+                <ul>
+                    <li><a class="about">אודות</a></li>
+                    <li><a class="howToPlay">איך משחקים?</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="aboutDiv" class="popUp bounceInDown hide">
+            <a class="closeAbout"><img class="X" src="pics/X.png" /></a>
+            <p id="title"><b>עד הפינגווין האחרון</b></p>
+            <img id="logoIn" src="pics/penguinLogo.png"/>
+            <p>אפיון ופיתוח: מיכל נבון | ליטל לביא</p>
+            <p>אופיין ופותח במסגרת פרויקט בקורסים:</p>
+            <p>סביבות לימוד אינטראקטיביות 1 + תכנות אינטראקטיבי 1</p>
+            <p>תש"פ 2020</p>
+            <img id="HITlogo" src="pics/logo50.png"/><br />
+            <a href="https://www.hit.ac.il/telem/overview">הפקולטה לטכנולוגיות למידה</a>
+            <p>המכון הטכנולוגי חולון</p>
+        </div>
+        <div id="howToPlayDiv" class="popUp bounceInDown hide">
+            <a class="closeHowToPlay"><img class="X" src="pics/X.png" /></a>
+            <img id="penguin" src="pics/penguin.png" />
+            <p>הכירו את ויקטור ! הוא וחבריו החליטו לשחק משחק מחבואים ברחבי אנטרטיקה. עליך לעזור לויקטור למצוא את כל חבריו בעזרת מענה נכון על כלל השאלות במשחק.</p>
+            <p>עליך לבחור מבין התשובות המוצגות לפניך את התשובה שלדעתך היא הנכונה ביותר. כדי לבחור עליך ללחוץ על הקרחון ולאחר מכן, ללחוץ על שלט בדוק שיציג בפניך האם צדקת או טעית.</p>
+            <p>במידה וצדקת הפינגווין שמצאת יתווסף אליך להמשך המשחק.</p><p>זהירות ! במידה ותטעה אתה עוד יכול לקבל כדור שלג לפרצוף.</p>
+            <p>לאחר שתמצא את <b>כל הפינגוונים </b>תגיע לסוף המשחק שם כל הפינגווינים רוקדים וצוחקים !!</p>
+        </div>
+
+        <div id="gameArea" class="">
+            <!--src = הקישור של דף המשחק שלכם (לא קובץ האנימייט)-->
+            <iframe id="gameIframe" src="https://litallavi.github.io/tillTheLastPenguin/tillTheLastPenguin.html" frameBorder="0" allowfullscreen="">Browser not compatible.</iframe>
+        </div>
+    </div>
+</body>
+
+</html>
